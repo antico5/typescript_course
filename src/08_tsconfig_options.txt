@@ -1,0 +1,17 @@
+target: es5, es6, etc
+
+lib: modulos que van incluidos por defecto. por ejemplo document (para browser), console, String, Map, etc.
+Si lib no se especifica se usan valores por defecto, sino solo se usa lo que esta especificado
+lib = [] no te incluye nada y ni siquiera se puede usar console.log
+  algunas opciones: dom, es6, dom.iterable, scripthost
+
+allowJs: compilar .allowJs
+checkJs: no compila pero chequea
+
+sourceMap: genera archivos .js.map junto con los compilados .js, permitiendo debuggear mas facil.
+  por ejemplo en el browser aparecen archivos .ts, se pueden poner breakpoints, etc.
+
+noEmit: no genera ningun archivo. Se usa para chequear que todo compile
+
+noEmitOnError: no genera archivos si hay algun error
+

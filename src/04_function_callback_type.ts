@@ -1,4 +1,4 @@
-function addAndHandle(n1: number, n2: number, cb: (number) => void) {
+function addAndHandle(n1: number, n2: number, cb: (n1: number) => void) {
   const sum = n1 + n2;
   cb(sum);
 }

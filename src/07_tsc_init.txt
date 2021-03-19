@@ -1,0 +1,5 @@
+# Run in root folder. Creates tsconfig.json
+tsc --init
+
+# After that, you can just run on root folder
+tsc
