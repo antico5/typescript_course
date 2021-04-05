@@ -15,3 +15,8 @@ noEmit: no genera ningun archivo. Se usa para chequear que todo compile
 
 noEmitOnError: no genera archivos si hay algun error
 
+Opciones estrictas:
+  noImplicitAny: te obliga a especificar tipos en parametros, variables, etc (que no puedan ser inferidos)
+    es buena practica
+  strictNullChecks: es buena practica, te obliga a contemplar los potenciales null
+  alwaysStrict: Se asegura que todos los archivos JS tengan "use strict"
