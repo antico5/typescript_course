@@ -40,10 +40,4 @@ console.log(cFirst.title) // Works!
 const cSecond = employees[1] as Nurse
 console.log(cSecond.level) // Works!
 
-function printNurse(nurse: Employee) {
-  console.log(nurse);
-}
-
-printNurse(employees[1])
-
 export {}
