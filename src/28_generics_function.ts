@@ -19,4 +19,20 @@ const person = merge({name: 'dylan'}, {'age': 23})
 
 const other = funcThatUsesMerge({name: 'joe'}, {level: "5" })
 
+interface Lengthable {
+  length: number
+}
+
+function countAndDescribe<T extends Lengthable>(obj: T): [T, string] {
+  let description = "Got no values"
+  if (obj.length > 0) {
+    description = `Got ${obj.length} values`
+  }
+  return [obj, description]
+}
+
+console.log(countAndDescribe([1,2]))
+console.log(countAndDescribe('Hello world'))
+
+
 export {}
