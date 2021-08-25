@@ -1,0 +1,2 @@
+Decorators run only once when the class is defined
+Not when it's instantiated
